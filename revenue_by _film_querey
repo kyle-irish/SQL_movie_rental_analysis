@@ -1,0 +1,18 @@
+#Which movies contributed the most/least to revenue gain?		
+SELECT		
+F.title,		
+COUNT(R.rental_id) AS count_of_times_rented,		
+SUM(P.amount) AS total_rental_amount,		
+F.rating,		
+C.name		
+FROM payment P		
+INNER JOIN rental R ON P.rental_id = R.rental_id		
+INNER JOIN inventory I ON R.inventory_id = I.inventory_id		
+INNER JOIN film F ON I.film_id = F.film_id		
+INNER JOIN film_category FC ON F.film_id = FC.film_id		
+INNER JOIN category C ON FC.category_id = C.category_id		
+GROUP BY F.title,		
+		F.rating,
+		C.name
+ORDER BY SUM(P.amount) DESC, COUNT(R.rental_id) DESC		
+;		
