@@ -1,0 +1,11 @@
+#list of countries for Rockbuster in terms of customer numbers in order from most to least
+SELECT	
+	U.country,
+	count(customer_id) AS count_of_customers
+FROM customer C	
+INNER JOIN address A ON C.address_id = A.address_id	
+INNER JOIN city I ON A.city_id = I.city_id	
+INNER JOIN country U ON I.country_id = U.country_id	
+GROUP BY U.country	
+ORDER BY count(customer_id) DESC	
+;	
