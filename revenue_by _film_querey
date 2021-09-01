@@ -1,4 +1,4 @@
-#Which movies contributed the most/least to revenue gain?		
+--Which movies contributed the most/least to revenue gain?		
 SELECT		
 F.title,		
 COUNT(R.rental_id) AS count_of_times_rented,		
