@@ -14,4 +14,4 @@ Their main questions are:
 Notes on Organization:
 * Powerpoint presentation file rpresents final report. 
 * [Link to Tableau Visualizations](https://public.tableau.com/views/K_Irish3_10PresentingSQLResults/CustomersbyCountry?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link![image](https://user-images.githubusercontent.com/36676024/131554004-bb76c368-f51e-4557-a0f5-eb60ce0d3625.png))
-* More interesting queries attached as files. All queries and data pulled present in .xlsx excel file.
+* More interesting queries (multiple JOINS, subqueries, or Common Table Expressions) attached as files. All queries and data pulled present in .xlsx excel file.
