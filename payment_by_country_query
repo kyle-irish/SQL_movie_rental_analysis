@@ -1,4 +1,4 @@
-#payment by country
+--payment by country
 SELECT	
 	U.country,
 	SUM(P.amount) AS payment_total
