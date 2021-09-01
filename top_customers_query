@@ -1,4 +1,4 @@
-#location of customers in order of highest overall payment	
+--location of customers in order of highest overall payment	
 SELECT	
 	C.customer_id,
 	C.first_name,
