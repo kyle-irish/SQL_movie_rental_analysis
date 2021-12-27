@@ -16,7 +16,7 @@ FROM
 ;
 
 --Find the average amount paid by the top 5 customers using CTE
-EXPLAIN WITH top5_amount_paid (customer_id, first_name, amount_paid) AS
+SELECT top5_amount_paid (customer_id, first_name, amount_paid) AS
 	(SELECT 
 	 	c.customer_id,
 		c.first_name,
